@@ -1,0 +1,30 @@
+{
+    let elmWrapDiv = document.createElement('div');
+    elmWrapDiv.classList.add('wrap');
+    {
+      let elmDiv = document.createElement('div');
+      elmDiv.id = 'vanta-js';
+      elmWrapDiv.appendChild(elmDiv);
+    }
+    let elmBody = document.getElementsByTagName('body');
+    elmBody[0].appendChild(elmWrapDiv);
+}
+  
+vantaData = JSON.parse(localizeData['vanta']);
+
+VANTA.CLOUDS2({
+    el: "#vanta-js",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale:1.0,
+    // texturePath: '../wp-content/plugins/tantive-gimmick-pack/assets/noise.png',
+    texturePath: localizeData['noise'],
+    backgroundColor: vantaData['vantaClouds2BackgroundColor'],
+    skyColor: vantaData['vantaClouds2SkyColor'],
+    cloudColor: vantaData['vantaClouds2CloudColor'],
+    lightColor: vantaData['vantaClouds2LightColor'],
+    speed: Number(vantaData['vantaClouds2Speed']),
+});

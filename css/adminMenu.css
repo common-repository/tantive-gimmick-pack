@@ -1,0 +1,285 @@
+.greetingBox {
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #fcb900;
+}
+
+.backgroundSettingModalPanel,
+#mouseStalkerSettingModalPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: scroll;
+}
+
+.hiddenPanel {
+    display: none;
+}
+
+.particlesDetailSettingPanel {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    margin: 5% auto;
+    background: white;
+    border: 1px solid #555;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+#tantiveGimmickPackBBSWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tantiveGimmickPackBBSBox {
+    width: 25%;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tantiveGimmickPackBBSImg {
+    width: 80%;
+}
+
+.tantiveGimmickPackBBSInput {
+    pointer-events : none;
+}
+
+.tantiveGimmickPackBBSSettingButton {
+    width: 15%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.particlesDetailSettingPanel li.accordionClosed {
+    margin: 0;
+    line-height: 2.2;
+    border: 1px solid #ccc;
+}
+
+.accordionHidden {
+    display: none !important;
+}
+
+.accordionHidden + label > li{
+    position: relative;
+}
+
+.accordionHidden + label + li {
+    display: none;
+}
+
+.accordionHidden:checked + label + li {
+    display: block;
+}
+
+.accordionHidden + Label > li::before {
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #555;
+	border-right: 2px solid #555;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 5%;
+	transform: rotate(135deg);
+}
+
+.accordionHidden:checked + Label > li::before {
+    transform: rotate(-45deg) !important;
+}
+
+.displayFlex {
+    display: flex;
+    align-items: center;
+}
+
+.flexBasis20 {
+    flex-basis: 20%;
+}
+
+#wpbody-content input[type=checkbox] {
+    margin-top: 0;
+}
+
+
+.tantiveGimmickPackMSSBox {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tantiveGimmickPackMSSTry {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+#tantiveGimmickPackMSSWrapper {
+    gap: 10px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+#tantiveGimmickPackMSSStalker1,
+#tantiveGimmickPackMSSStalker2,
+#tantiveGimmickPackMSSStalker3,
+#tantiveGimmickPackMSSStalker4,
+#tantiveGimmickPackMSSCursor4,
+#tantiveGimmickPackMSSStalker5,
+#tantiveGimmickPackMSSCursor5 {
+    border-radius: 50%;
+    visibility: hidden;
+    display:none;
+    position: absolute;
+}
+
+#tantiveGimmickPackMSSCursor4,
+#tantiveGimmickPackMSSCursor5 {
+    cursor: none;
+    background-color: black;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker1,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker2,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker3,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker4,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSCursor4,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker5,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSCursor5 {
+    display: block;
+    visibility: visible;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0,0);
+    /* transition-duration:0.5s; */
+    transition-timing-function: ease-out;
+    z-index: 999;
+}
+
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker1,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker2,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker3,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker4,
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker5 {
+    transition-duration:0.5s;
+}
+
+.tantiveGimmickPackMSSTry:hover #tantiveGimmickPackMSSStalker3{
+    background-color: white;
+    mix-blend-mode: difference;
+}
+
+#tantiveGimmickPackMSSTryMeLink2,
+#tantiveGimmickPackMSSTryMeLink5 {
+    display: block;
+    width: 50%;
+    padding: 0 10px;
+    margin: 20px auto 0 auto;
+    line-height: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+#tantiveGimmickPackMSSTryMeLinkBlack3 {
+    display: block;
+    width: 50%;
+    padding: 0 10px;
+    margin: 20px auto 0 auto;
+    line-height: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+#tantiveGimmickPackMSSTryMeLinkWhite3 {
+    display: block;
+    width: 50%;
+    padding: 0 10px;
+    margin: 20px auto 0 auto;
+    line-height: 2rem;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+.tantiveGimmickPackMSSOnOff {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;  
+}
+
+.tantiveGimmickPackMSSradio {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;  
+}
+
+.tantiveGimmickPackMSSradio + label{
+    cursor: pointer;
+    position: relative;
+    width: 40px;  
+}
+
+.tantiveGimmickPackMSSradio + label::before,
+.tantiveGimmickPackMSSradio + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+}
+
+.tantiveGimmickPackMSSradio + label::before {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    height: 20px;
+    width: 38px;  
+}
+
+.tantiveGimmickPackMSSradio + label::after {
+    background-color: #ddd;
+    border-radius: 50%;
+    opacity:1;
+    height: 22px;
+    width: 22px;
+    left: 0;
+}
+
+.tantiveGimmickPackMSSradio:checked + label:before {
+    background-color: skyblue;
+}
+
+.tantiveGimmickPackMSSradio:checked + label:after {
+    background-color: blue;
+    left: 16px;
+}
+
+#mouseStalkerSettingModalPanel > div {
+    width: 30vw;
+    padding: 20px;
+    margin: 10vh auto 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+}
